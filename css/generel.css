@@ -14,13 +14,26 @@ h2 {
   padding: 3em;
 }
 
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+
+.smallpush {
+  display: flex;
+  gap: 2em;
+  font-size: 20px;
+}
+
 .box {
   background-color: rgb(176, 230, 253);
   padding: 40px 20px;
   align-items: center;
 }
 
-a {
+.box a {
   text-decoration: none;
   color: black;
   font-family: Helvetica, sans-serif;
