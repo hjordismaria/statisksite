@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+
+.smallpush {
+  display: flex;
+  gap: 2em;
+  font-size: 20px;
+}
+.product-profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin: 2em;
+}

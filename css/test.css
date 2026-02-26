@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* top header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* 3-column layout */
+
+article .product {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 0.9fr; /* left, middle, right */
+  gap: 30px;
+  align-items: start;
+  padding: 24px;
+}
+
+/* image */
+.img img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+}
+
+/* columns */
+.img {
+  flex: 1;
+}
+.info {
+  flex: 1.2;
+}
+.buy {
+  flex: 0.9;
+}
+
+/* image */
+.img img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+}
+
+/* info text */
+.info h2 {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.info h3 {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #444;
+}
+
+.info .brand {
+  margin-top: 26px;
+  font-size: 44px;
+}
+
+/* buy box */
+.buy {
+  background: #d9d9d9;
+  padding: 22px;
+}
+
+.buy h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.buy .meta {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.buy .label {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.buy select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.buy .btn {
+  display: block;
+  text-align: center;
+  background: #eee;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
