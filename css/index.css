@@ -3,40 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-h2 {
-  font-family: Helvetica, sans-serif;
-  margin-left: 2em;
-}
-.container {
+
+.categorylist {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 3em;
 }
-
-.split {
+/* 
+.headernav nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em;
-}
+  margin: 2em; 
+} */
 
-.smallpush {
-  display: flex;
-  gap: 2em;
-  font-size: 20px;
-}
-
-.box {
-  background-color: rgb(176, 230, 253);
-  padding: 40px 20px;
-  align-items: center;
-}
-
-.box a {
+.categorylist a {
   text-decoration: none;
-  color: black;
+  color: rgb(63, 79, 221);
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   text-align: center;
+  background-color: rgb(210, 191, 255);
+  padding: 40px 20px;
+  align-items: center;
+  border: 2px solid #7a54ed;
 }

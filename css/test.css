@@ -31,8 +31,13 @@ body {
 }
 
 /* 3-column layout */
-
-article .product {
+.product {
+  display: flex;
+  gap: 30px;
+  padding: 24px;
+  align-items: flex-start;
+}
+.product {
   display: grid;
   grid-template-columns: 1.2fr 1.5fr 0.9fr; /* left, middle, right */
   gap: 30px;
