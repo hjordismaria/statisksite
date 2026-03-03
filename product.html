@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <script src="js/product.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -19,8 +20,45 @@
       </nav>
     </header>
 
-    <main>
-      <article class="product-profile">
+    <main id="productContainer">
+      <figure>
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/1599.webp" alt="Product Image" class="productImage" />
+        <span class="saleLabel">Udsalg!</span>
+      </figure>
+
+      <section class="productDetails">
+        <div class="productInfo">
+          <h2 class="productnameInfo">Product Information</h2>
+
+          <p class="productModelName"><span class="bold">Model name</span>Product Name</p>
+
+          <p class="productColor"><span class="bold">Color</span>Green</p>
+
+          <p class="productNumber"><span class="bold">Inventory number</span>1163</p>
+        </div>
+
+        <!-- NEW: right side column -->
+        <div class="purchaseArea">
+          <h2 class="productName">Product Name</h2>
+
+          <div class="productMeta">
+            <p class="articleType"><span class="bold">Type</span>Caps</p>
+            <p class="productCategory"><span class="bold">Category</span>Accessories</p>
+            <p class="productPrice"><span class="bold">Price</span>350,-</p>
+
+            <p>Choose a size</p>
+            <select>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+
+          <button class="buyButton">Buy Now</button>
+        </div>
+      </section>
+
+      <!-- <article class="product">
         <div class="product-img">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1599.webp" alt="" />
         </div>
@@ -41,11 +79,16 @@
           <h2>Blablabla</h2>
           <p>Puma | Accesories</p>
           <div>
-            <p>choose a size</p>
-            <a href="/">Add to basket</a>
+            <p>Choose a size</p>
+            <select>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <button class="buybutton">Add to basket</button>
           </div>
         </div>
-      </article>
+      </article> -->
     </main>
   </body>
 </html>
