@@ -36,9 +36,35 @@ figure {
   margin: 0.4rem 0;
 }
 
+.discount-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #e53935;
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+}
+.new-price {
+  display: none;
+}
+
+.discounted .new-price {
+  display: flex;
+  color: red;
+}
+.discounted .old-price {
+  color: #777;
+  margin-right: 8px;
+  text-decoration: line-through;
+}
 /* Labels align nicely */
 .bold {
-  font-weight: 700;
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-weight: 900;
   display: inline-block;
   min-width: 170px;
 }
@@ -68,7 +94,6 @@ figure {
   margin: 0.35rem 0;
 }
 .purchaseArea {
-  background-color: aqua;
   margin: 10px;
   padding: 10px;
 }
@@ -83,11 +108,18 @@ figure {
 .buyButton {
   width: 100%;
   padding: 1rem;
-  border: 0;
-  background: #111;
-  color: #fff;
-  font-weight: 700;
+  border: 1px solid #0d0d0d;
+
+  background: hotpink;
+  color: #0d0d0d;
+  font-weight: 500;
   cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase;
+}
+.buyButton:hover {
+  background: black;
+  color: hotpink;
 }
 
 /* Responsive */

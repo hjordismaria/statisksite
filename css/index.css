@@ -7,8 +7,9 @@
 .categorylist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 3em;
+  gap: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 /* 
 .headernav nav {
@@ -17,15 +18,24 @@
   align-items: center;
   margin: 2em; 
 } */
-
+.category-title {
+  font-size: 2em;
+  margin: 47px;
+}
 .categorylist a {
   text-decoration: none;
-  color: rgb(63, 79, 221);
-  font-family: Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: Arial;
   font-size: 20px;
   text-align: center;
-  background-color: rgb(210, 191, 255);
+  background-color: hotpink;
   padding: 40px 20px;
   align-items: center;
-  border: 2px solid #7a54ed;
+  border: 2px solid #000000;
+}
+.categorylist a:hover {
+  background-color: black;
+  color: hotpink;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
 }
