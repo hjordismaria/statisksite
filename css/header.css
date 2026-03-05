@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "CourierPrime-Regular";
+  src: url(../fonts/CourierPrime-Regular.woff);
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  font-family: Helvetica, sans-serif;
-  background: #fffff4;
+  font-family: "CourierPrime-Regular";
+  background: #fff;
 }
 @media screen and (min-width: 700px) {
   .headernav {
@@ -12,8 +23,10 @@ body {
 
 .headernav {
   /* margin-right: auto; */
-  font-family: Helvetica, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   margin: 2em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .headernav > a {
@@ -22,20 +35,19 @@ body {
 }
 
 h2 {
-  font-family: Helvetica, sans-serif;
-
-  color: #4f19f2;
+  font-family: "Arial";
+  text-transform: uppercase;
 }
 
 .headernav h1 span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0.2rem);
-  color: #7a54ed;
+  color: hotpink;
 }
 .headernav h1 {
-  font-family: Helvetica, sans-serif;
+  font-family: Arial;
   font-size: 32px;
-  color: rgb(210, 191, 255);
+  color: black;
 }
 .headernav > * {
   margin: 0;
@@ -43,11 +55,15 @@ h2 {
 
 .smallpush a {
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
-  color: #7a54ed;
+
+  color: #000000;
   text-decoration: none;
   margin: 1em;
 }
 .smallpush {
   gap: 10px;
+}
+.smallpush a:hover {
+  text-decoration: underline;
+  color: deeppink;
 }
